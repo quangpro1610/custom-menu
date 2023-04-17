@@ -76,6 +76,12 @@ if (!function_exists('nv_custom_menu_all')) {
             $block_theme = 'default';
         }
 
+        if (NV_LANG_DATA == 'vi') {
+            $lang_global['Home'] = 'Trang chủ';
+        } elseif (NV_LANG_DATA == 'en') {
+            $lang_global['Home'] = 'Homepage';
+        }
+
         $xtpl = new XTemplate($block_config['block_name'] . '.tpl', NV_ROOTDIR . '/themes/' . $block_theme . '/blocks');
         $xtpl->assign('LANG', $lang_global);
         $xtpl->assign('BLOCK_THEME', $block_theme);

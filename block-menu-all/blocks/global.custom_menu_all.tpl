@@ -17,7 +17,8 @@
 <div class="custom_menu_all">
     <ul class="slimmenu show_menu">
         <li<!-- BEGIN: home --> class="current"<!-- END: home -->>
-            <a title="{LANG.Home}" href="{THEME_SITE_HREF}"><em class="fa fa-lg fa-home"></em></a>
+            <a title="{LANG.Home}" href="{THEME_SITE_HREF}" class="home_desktop"><em class="fa fa-lg fa-home"></em></a>
+            <a title="{LANG.Home}" href="{THEME_SITE_HREF}" class="home_mobile">{LANG.Home}</a>
         </li>
         <!-- BEGIN: loopcat1 -->
         <li {CAT1.class}>
