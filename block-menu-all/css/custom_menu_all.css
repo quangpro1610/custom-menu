@@ -16,6 +16,7 @@
 }
 .custom_menu_all ul.slimmenu li a:hover {
     background-color: #245682;
+    color: #fff;
 }
 .custom_menu_all ul.slimmenu li ul {
     width: auto;
@@ -27,13 +28,14 @@
 .custom_menu_all ul.slimmenu li.has-submenu a {
     white-space: nowrap;
     width: 100%;
-    padding-right: 64px;
+    padding-right: 32px;
 }
 .custom_menu_all ul.slimmenu li .sub-toggle {
     background: transparent;
+    width: 24px;
 }
 .custom_menu_all ul.slimmenu li .sub-toggle>i {
-    font-size: 12px;
+    font-size: 10px;
     color: #fff;
 }
 .custom_menu_all ul.slimmenu li.has-submenu ul li {
@@ -50,7 +52,13 @@
 .home_mobile {
     display: none !important;
 }
+.custom_menu_all ul.slimmenu li ul li .sub-collapser > i {
+    color: #fff;
+}
 @media (max-width: 768px) {
+    .open-menu .second-nav {
+        z-index: auto;
+    }
     .open-menu .mobile-menu-bg {
         position: fixed;
         top: 0;
