@@ -43,6 +43,9 @@
     font-size: 10px;
     color: #fff;
 }
+.custom_menu_all ul.slimmenucs ul li.has-submenu .sub-toggle>i {
+    vertical-align: middle;
+}
 .custom_menu_all ul.slimmenucs li.has-submenu ul li {
     display: block;
     width: 100%;
