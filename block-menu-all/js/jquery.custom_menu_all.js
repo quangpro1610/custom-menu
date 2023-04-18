@@ -8,7 +8,7 @@
 (function ($, window, document, undefined) {
     "use strict";
 
-    var pluginName = 'slimmenu',
+    var pluginName = 'slimmenucs',
         oldWindowWidth = 0,
         defaults = {
             resizeWidth: '767',
@@ -35,11 +35,11 @@
             var $window = $(window),
                 options = this.options,
                 $menu = this.$elem,
-                $collapser = '<div class="menu-collapser">' + options.collapserTitle + '<div class="collapse-button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div></div>',
+                $collapser = '<div class="csmenu-collapser">' + options.collapserTitle + '<div class="cscollapse-button"><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span></div></div>',
                 $menuCollapser;
 
             $menu.before($collapser);
-            $menuCollapser = $menu.prev('.menu-collapser');
+            $menuCollapser = $menu.prev('.csmenu-collapser');
 
             $menu.on('click', '.sub-toggle', function (e) {
                 e.preventDefault();
@@ -72,7 +72,7 @@
                 windowWidth = $window.width(),
                 $options = this.options,
                 $menu = $(this.element),
-                $menuCollapser = $('body').find('.menu-collapser');
+                $menuCollapser = $('body').find('.csmenu-collapser');
 
             if (window['innerWidth'] !== undefined) {
                 if (window['innerWidth'] > windowWidth) {

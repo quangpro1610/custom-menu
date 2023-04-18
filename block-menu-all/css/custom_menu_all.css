@@ -2,58 +2,68 @@
     padding-left: 0;
 }
 .custom_menu_all .show_menu,
-.custom_menu_all ul.slimmenu>li {
+.custom_menu_all ul.slimmenucs>li {
     background-color: #428bca;
 }
-.custom_menu_all ul.slimmenu li {
+.custom_menu_all ul.slimmenucs li {
     border-left: none;
 }
-.custom_menu_all ul.slimmenu li a {
+.custom_menu_all ul.slimmenucs li a {
     font-size: 14px;
     width: 100%;
     color: #fff;
     padding: 12px 16px;
 }
-.custom_menu_all ul.slimmenu li a:hover {
+.custom_menu_all ul.slimmenucs li a:hover {
     background-color: #245682;
     color: #fff;
 }
-.custom_menu_all ul.slimmenu li ul {
+.custom_menu_all ul.slimmenucs li ul {
     width: auto;
     background-color: #428bca;
+    border: none;
+    box-shadow: none;
+    min-width: auto;
+    border-radius: 0;
 }
-.custom_menu_all ul.slimmenu li.has-submenu {
+.custom_menu_all ul.slimmenucs li.has-submenu {
     display: block;
 }
-.custom_menu_all ul.slimmenu li.has-submenu a {
+.custom_menu_all ul.slimmenucs li.has-submenu a {
     white-space: nowrap;
     width: 100%;
     padding-right: 32px;
 }
-.custom_menu_all ul.slimmenu li .sub-toggle {
+.custom_menu_all ul.slimmenucs li .sub-toggle {
     background: transparent;
     width: 24px;
 }
-.custom_menu_all ul.slimmenu li .sub-toggle>i {
+.custom_menu_all ul.slimmenucs li .sub-toggle>i {
     font-size: 10px;
     color: #fff;
 }
-.custom_menu_all ul.slimmenu li.has-submenu ul li {
+.custom_menu_all ul.slimmenucs li.has-submenu ul li {
     display: block;
     width: 100%;
     background-color: transparent;
 }
-.custom_menu_all .collapse-button {
+.custom_menu_all .cscollapse-button {
     background-color: #428bca;
 }
-.custom_menu_all .menu-collapser {
+.custom_menu_all .csmenu-collapser {
     background-color: transparent;
 }
 .home_mobile {
     display: none !important;
 }
-.custom_menu_all ul.slimmenu li ul li .sub-collapser > i {
+.custom_menu_all ul.slimmenucs li ul li .sub-collapser > i {
     color: #fff;
+}
+.custom_menu_all ul.slimmenucs li ul li {
+    width: 100%;
+}
+.custom_menu_all ul.slimmenucs li>ul>li ul {
+    width: auto;
 }
 @media (max-width: 768px) {
     .open-menu .second-nav {
@@ -76,22 +86,22 @@
         background-color: #fff;
         display: block !important;
         z-index: 9999;
-        width: 70%;
         transform: translateX(100%);
         transition: transform 0.5s;
         overflow: auto;
     }
     .custom_menu_all .show_menu.active {
+        width: 70%;
         transform: translateX(0);
     }
-    .custom_menu_all ul.slimmenu li a,
-    .custom_menu_all ul.slimmenu li.has-submenu a {
+    .custom_menu_all ul.slimmenucs li a,
+    .custom_menu_all ul.slimmenucs li.has-submenu a {
         white-space: normal;
     }
-    .custom_menu_all ul.slimmenu ul li a {
+    .custom_menu_all ul.slimmenucs ul li a {
         padding-left: 25px;
     }
-    .custom_menu_all ul.slimmenu ul ul li a {
+    .custom_menu_all ul.slimmenucs ul ul li a {
         padding-left: 35px;
     }
     .home_desktop {
