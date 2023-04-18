@@ -35,14 +35,15 @@
         <!-- END: loopcat1 -->
     </ul>
 </div>
+<script type="text/javascript" src="{NV_BASE_SITEURL}themes/{BLOCK_THEME}/js/jquery.easing.js"></script>
 <script type="text/javascript" src="{NV_BASE_SITEURL}themes/{BLOCK_THEME}/js/jquery.custom_menu_all.js"></script>
 <script type="text/javascript" src="{NV_BASE_SITEURL}themes/{BLOCK_THEME}/js/custom_menu_all.js"></script>
 <script>
     $('.show_menu').slimmenucs({
-        resizeWidth: '800',
+        resizeWidth: '1024',
         collapserTitle: '',
         animSpeed: 'medium',
-        easingEffect: null,
+        easingEffect: 'easeOutSine',
         indentChildren: false,
         childrenIndenter: '&nbsp;',
         initiallyVisible: false

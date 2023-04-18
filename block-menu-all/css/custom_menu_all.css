@@ -32,13 +32,14 @@
 .custom_menu_all ul.slimmenucs li.has-submenu a {
     white-space: nowrap;
     width: 100%;
-    padding-right: 32px;
+    padding-right: 24px;
 }
 .custom_menu_all ul.slimmenucs li .sub-toggle {
     background: transparent;
     width: 24px;
 }
 .custom_menu_all ul.slimmenucs li .sub-toggle>i {
+    vertical-align: inherit;
     font-size: 10px;
     color: #fff;
 }
@@ -65,7 +66,7 @@
 .custom_menu_all ul.slimmenucs li>ul>li ul {
     width: auto;
 }
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .open-menu .second-nav {
         z-index: auto;
     }
