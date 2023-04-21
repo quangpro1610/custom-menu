@@ -91,12 +91,12 @@
         display: block !important;
         z-index: 9999;
         transform: translateX(100%);
-        transition: transform 0.5s;
         overflow: auto;
     }
     .custom_menu_all .show_menu.active {
         width: 70%;
         transform: translateX(0);
+        transition: transform 0.5s;
     }
     .custom_menu_all ul.slimmenucs li a,
     .custom_menu_all ul.slimmenucs li.has-submenu a {

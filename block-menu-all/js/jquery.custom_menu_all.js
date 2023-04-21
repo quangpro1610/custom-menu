@@ -40,13 +40,10 @@
 
             $menu.before($collapser);
             $menuCollapser = $menu.prev('.csmenu-collapser');
-
             $menu.on('click', '.sub-toggle', function (e) {
                 e.preventDefault();
                 e.stopPropagation();
-
                 var $parentLi = $(this).closest('li');
-
                 if ($(this).hasClass('expanded')) {
                     $(this).removeClass('expanded').html(options.expandIcon);
                     $parentLi.find('>ul').slideUp(options.animSpeed, options.easingEffect);
@@ -128,9 +125,7 @@
         },
 
         indent: function (num, options) {
-            var i = 0,
-                $indent = '';
-            for (; i < num; i++) {
+            for (var i = 0, $indent = ''; i < num; i++) {
                 $indent += options.childrenIndenter;
             }
             return '<i>' + $indent + '</i> ';

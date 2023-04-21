@@ -54,7 +54,7 @@
 .custom_menu_all ul.slimmenucs:before,
 .custom_menu_all ul.slimmenucs:after {
     content: '';
-    display: table
+    display: table;
 }
 .custom_menu_all ul.slimmenucs:after {
     clear: both

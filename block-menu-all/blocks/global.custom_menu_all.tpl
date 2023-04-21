@@ -25,7 +25,7 @@
             <!-- BEGIN: icon -->
             <img src="{CAT1.icon}" />&nbsp;
             <!-- END: icon -->
-            <a title="{CAT1.note}" href="{CAT1.link}" {CAT1.target} class="pull-left">{CAT1.title_trim}</a>
+            <a title="{CAT1.note}" href="{CAT1.link}" {CAT1.target}>{CAT1.title_trim}</a>
             <!-- BEGIN: cat2 -->
                 <ul class="sub_menu">
                     {HTML_CONTENT}
@@ -35,18 +35,17 @@
         <!-- END: loopcat1 -->
     </ul>
 </div>
-<script type="text/javascript" src="{NV_BASE_SITEURL}themes/{BLOCK_THEME}/js/jquery.easing.js"></script>
 <script type="text/javascript" src="{NV_BASE_SITEURL}themes/{BLOCK_THEME}/js/jquery.custom_menu_all.js"></script>
+<script type="text/javascript" src="{NV_BASE_SITEURL}themes/{BLOCK_THEME}/js/jquery.easing.js"></script>
 <script type="text/javascript" src="{NV_BASE_SITEURL}themes/{BLOCK_THEME}/js/custom_menu_all.js"></script>
 <script>
-    $('.show_menu').slimmenucs({
+    $('.slimmenucs').slimmenucs({
         resizeWidth: '1024',
         collapserTitle: '',
         animSpeed: 'medium',
-        easingEffect: 'easeOutSine',
+        easingEffect: 'easeInOutQuint',
         indentChildren: false,
-        childrenIndenter: '&nbsp;',
-        initiallyVisible: false
+        childrenIndenter: '&nbsp;'
     });
 </script>
 <!-- END: main -->
